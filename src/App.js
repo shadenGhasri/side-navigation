@@ -7,7 +7,7 @@ function App() {
       <div className="logo-content">
         <div className="logo">
           <i class="bx bx-spa"></i>
-          <div className="logo-name">coding</div>
+          <div className="logo-name">hamresaan</div>
         </div>
         <i class='bx bx-chevron-right' id="btn"></i>
       </div>
