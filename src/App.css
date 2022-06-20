@@ -67,6 +67,7 @@ body{
   margin: 0 5px;
   list-style: none;
   line-height: 50px;
+  
 }
 
 .sidebar ul li a{
@@ -75,6 +76,7 @@ body{
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
+  border-radius: 12px;
 }
 
 .sidebar ul li a:hover{
@@ -87,4 +89,5 @@ body{
   min-width: 50px;
   border-radius: 12px;
   line-height: 50px;
+  text-align: center;
 }
