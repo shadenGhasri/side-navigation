@@ -18,56 +18,56 @@ function App() {
             <i class="bx bxs-dashboard"></i>
             <span className="links-name">Dashboard</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chart"></i>
             <span className="links-name">Performance</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">Guides</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">Hotspots</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">Checklists</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">NPS</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">Segments</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-chat"></i>
             <span className="links-name">Themes</span>
           </a>
-          {/* <span className='tooltip'>dashboard</span> */}
+          <span className='tooltip'>dashboard</span>
         </li>
       </ul>
       <div className="profile-content">

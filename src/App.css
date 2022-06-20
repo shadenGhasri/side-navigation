@@ -70,6 +70,20 @@ body{
   
 }
 
+.sidebar ul li .tooltip{
+  position: absolute;
+  left: 122px;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 122px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+}
+
 .sidebar ul li a{
   color: #fff;
   display: flex;
