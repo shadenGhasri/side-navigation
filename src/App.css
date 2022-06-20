@@ -8,11 +8,13 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #11101d;
+  --Third-color :#141321;
 }
 
-.dark {
+.light {
   --primary-color: #11101d;
   --secondary-color: #fff;
+  --Third-color: rgb(245, 238, 238);
 }
 
 body{
@@ -57,7 +59,7 @@ body{
 }
 
 .sidebar #btn{
-  color: rgb(12, 12, 12);
+  color: var(--primary-color);
   font-size: 25px;
 }
 
@@ -69,7 +71,7 @@ body{
   width: 30px;
   line-height: 40px;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--Third-color);
   border-radius: 10px;
 }
 

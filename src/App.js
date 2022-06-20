@@ -3,26 +3,32 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [collapse,setCollapse] = useState(true);
+  
+  const [action,setAction] = useState(true);
 
-  const handleCollapse = ()=>{
-    if (collapse === true){
-      setCollapse(false)
+  const handleAction = ()=>{
+    if (action === true){
+      setAction(false)
     }else{
-      setCollapse(true)
+      setAction(true)
     }
+  }
+
+  const handleMood = ()=>{
+
+    document.body.classList.toggle("light");
   }
 
 
   return (
     <>
-      <div className={collapse ? "sidebar"  : "sidebar active" }>
+      <div className={action ? "sidebar"  : "sidebar active" }>
         <div className="logo-content">
           <div className="logo">
             <i className="bx bx-spa"></i>
           </div>
-          <div className="box-btn" onClick={handleCollapse}>
-            <i className={collapse ? "bx bx-chevron-right" : "bx bx-chevron-left" } id="btn"></i>
+          <div className="box-btn" onClick={handleAction}>
+            <i className={action ? "bx bx-chevron-right" : "bx bx-chevron-left" } id="btn"></i>
           </div>
         </div>
         <ul className="nav-list">
@@ -86,7 +92,7 @@ function App() {
         <div className="profile-content">
           <div className="profile">
             <div className="mood">
-              <i className="bx bx-power-off" id="dark"></i>
+              <i className="bx bx-power-off" id="dark" onClick={handleMood}></i>
               <span>Dark Mood</span>
             </div>
             <div className="profile-details">
