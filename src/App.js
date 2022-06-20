@@ -71,13 +71,17 @@ function App() {
       </ul>
       <div className="profile-content">
         <div className="profile">
+        <div className="mood">
+        <i class='bx bx-power-off' id="dark"></i>
+        <span>Dark Mood</span>
+        </div>
           <div className="profile-details">
             <img src="" alt="profile" />
             <div className="name-job">
               <div className="name">shaden Ghasri</div>
               <div className="job">Web Developer</div>
             </div>
-            <i class="bx bx-ghost" id="light"></i>
+            
           </div>
         </div>
       </div>
