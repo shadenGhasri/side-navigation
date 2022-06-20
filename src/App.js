@@ -100,7 +100,7 @@ function App() {
             <div className="mood">
               <i className="bx bx-power-off" id="dark" onClick={handleMood}></i>
               <span className="text-mode">{
-                mood ? "Dark Mood" : "Light Mood"
+                mood ? "Dark Mode" : "Light Mode"
               }</span>
             </div>
             <div className="profile-details">
