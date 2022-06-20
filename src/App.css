@@ -8,7 +8,7 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #11101d;
-  --Third-color :#141321;
+  --Third-color :rgba(31, 29, 48, 0.7);
 }
 
 .light {
@@ -204,7 +204,8 @@ align-items: center;
   height: 60px;
   width: 190px;
   border-radius: 10px;
-  background-color: rgba(31, 29, 48, 0.7);
+  /* background-color: rgba(31, 29, 48, 0.7); */
+  background-color: var(--Third-color);
   transition: all 0.4s ease ;
 }
 
