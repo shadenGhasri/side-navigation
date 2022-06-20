@@ -10,6 +10,7 @@ body{
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  background-color: aliceblue;
 }
 
 .sidebar{
@@ -42,5 +43,15 @@ body{
 }
 
 .sidebar #btn{
-  
+  color: rgb(12, 12, 12);
+  position: absolute;
+  left: 94%;
+  top:40px;
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 10px;
 }

@@ -9,7 +9,7 @@ function App() {
           <i class="bx bx-spa"></i>
           <div className="logo-name">coding</div>
         </div>
-        <i class="bx bx-menu" id="btn"></i>
+        <i class='bx bx-chevron-right' id="btn"></i>
       </div>
       <ul className="nav-list">
         <li>
