@@ -22,7 +22,7 @@ function App() {
             <i className="bx bx-spa"></i>
           </div>
           <div className="box-btn" onClick={handleCollapse}>
-            <i className="bx bx-chevron-right" id="btn"></i>
+            <i className={collapse ? "bx bx-chevron-right" : "bx bx-chevron-left" } id="btn"></i>
           </div>
         </div>
         <ul className="nav-list">
