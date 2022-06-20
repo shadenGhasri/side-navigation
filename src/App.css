@@ -5,6 +5,16 @@
   /* font-family: ; */
 }
 
+:root {
+  --primary-color: #fff;
+  --secondary-color: #11101d;
+}
+
+.dark {
+  --primary-color: #11101d;
+  --secondary-color: #fff;
+}
+
 body{
   position: relative;
   min-height: 100vh;
@@ -19,7 +29,7 @@ body{
   position:fixed;
   top:0;
   left: 0;
-  background-color:#11101d;
+  background-color:var(--secondary-color);
   padding: 6px 14px;
   transition: all 0.5s ease;
 }
@@ -29,11 +39,11 @@ body{
 }
 
 .sidebar .logo-content .logo{
-  color: #fff;
+  color:var(--primary-color);
   margin-left: 20px;
   margin-top: 10px;
-  height: 50px;
-  width: 100%;
+  /* height: 50px;
+  width: 100%; */
 }
 
 .logo-content .logo i{
@@ -59,7 +69,7 @@ body{
   width: 30px;
   line-height: 40px;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--primary-color);
   border-radius: 10px;
 }
 
@@ -93,7 +103,7 @@ body{
   line-height: 35px;
   text-align: center;
   width: 122px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
   transition: 0s;
   opacity: 0;
@@ -111,7 +121,7 @@ body{
 }
 
 .sidebar ul li a{
-  color: #fff;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -121,8 +131,8 @@ body{
 }
 
 .sidebar ul li a:hover{
-  color: #11101d;
-  background-color: #fff;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .sidebar ul li a i{
@@ -148,7 +158,7 @@ body{
   position: absolute;
   left: 0;
   bottom: 0;
-  color: #fff;
+  color: var(--primary-color);
   width: 100%;
 }
 
@@ -200,7 +210,6 @@ align-items: center;
   object-fit: cover;
   border-radius: 25px;
   margin-left: 14px;
-  margin-top: 12px;
 }
 
 .active .profile-details img{
