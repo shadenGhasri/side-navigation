@@ -34,7 +34,7 @@ function App() {
             <i className="bx bx-spa"></i>
           </div>
           <div className="box-btn" onClick={handleAction}>
-            <i className={action ? "bx bx-chevron-right" : "bx bx-chevron-left" } id="btn"></i>
+            <i className={action ? "bx bx-chevron-right" : "bx bx-chevron-left" } id="btn" ></i>
           </div>
         </div>
         <ul className="nav-list">
