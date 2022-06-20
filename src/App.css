@@ -198,7 +198,7 @@ align-items: center;
   object-fit: cover;
   border-radius: 25px;
   margin-left: 14px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .active .profile-details img{
@@ -225,15 +225,21 @@ align-items: center;
 .profile .profile-details .job {
   font-size: 12px;
 }
-/* 
+
 .home_contetnt{
   position: absolute;
   height: 100%;
-  width: calc(100% - 240px);
-  left:240px
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.5s ease;
 }
 
 .home_contetnt .text{
   font-size: 25px;
   margin: 10px;
-} */
+}
+
+.active ~ .home_contetnt{
+  width: calc(100% - 240px);
+  left:240px
+}

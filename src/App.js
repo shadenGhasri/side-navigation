@@ -49,35 +49,35 @@ function App() {
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-link"></i>
               <span className="links-name">Hotspots</span>
             </a>
             <span className="tooltip">Hotspots</span>
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-check-shield"></i>
               <span className="links-name">Checklists</span>
             </a>
             <span className="tooltip">Checklists</span>
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-like"></i>
               <span className="links-name">NPS</span>
             </a>
             <span className="tooltip">NPS</span>
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-user-pin"></i>
               <span className="links-name">Segments</span>
             </a>
             <span className="tooltip">Segments</span>
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-edit"></i>
               <span className="links-name">Themes</span>
             </a>
             <span className="tooltip">Themes</span>
@@ -102,9 +102,9 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="home_contetnt">
+      <div className="home_contetnt">
         <div className="text">home</div>
-      </div> */}
+      </div>
     </>
   );
 }
