@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar{
+  height: 100%;
+  width: 240px;
+  position:fixed;
+  top:0;
+  left: 0;
+  background-color:#11101d;
+  padding: 6px 14px;
+}
