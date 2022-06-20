@@ -3,7 +3,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="sidebar">
+    <>
+      <div className="sidebar">
       <div className="logo-content">
         <div className="logo">
           <i class="bx bx-spa"></i>
@@ -86,6 +87,11 @@ function App() {
         </div>
       </div>
     </div>
+    <div className="home_contetnt">
+    <div className="text">home</div>
+      
+    </div>
+    </>
   );
 }
 

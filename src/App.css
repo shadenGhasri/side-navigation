@@ -146,3 +146,15 @@ align-items: center;
 .profile .profile-details .job {
   font-size: 12px;
 }
+
+.home_contetnt{
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 240px);
+  left:240px
+}
+
+.home_contetnt .text{
+  font-size: 25px;
+  margin: 10px;
+}
