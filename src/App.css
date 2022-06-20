@@ -31,6 +31,7 @@ body{
 .sidebar .logo-content .logo{
   color: #fff;
   margin-left: 20px;
+  margin-top: 10px;
   height: 50px;
   width: 100%;
 }
@@ -135,6 +136,7 @@ body{
 .sidebar .links-name{
   opacity: 0;
   pointer-events: none ;
+  transition: all 0.5s ease;
 }
 
 .active .links-name{
@@ -236,7 +238,7 @@ align-items: center;
 
 .home_contetnt .text{
   font-size: 25px;
-  margin: 10px;
+  margin: 30px 40px;
 }
 
 .active ~ .home_contetnt{
