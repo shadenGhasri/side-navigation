@@ -91,3 +91,34 @@ body{
   line-height: 50px;
   text-align: center;
 }
+
+.sidebar .profile-content{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.sidebar .profile-content .profile{
+  position: relative;
+  padding: 10px 6px;
+  height: 160px;
+}
+
+.profile-content .profile .profile-details{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.profile .profile-details img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.profile .profile-details .name-job {
+  margin-left: 15px;
+  font-weight: 400;
+}

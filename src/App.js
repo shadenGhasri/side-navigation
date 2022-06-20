@@ -72,11 +72,11 @@ function App() {
       <div className="profile-content">
         <div className="profile">
         <div className="mood">
-        <i class='bx bx-power-off' id="dark"></i>
-        <span>Dark Mood</span>
+          <i class='bx bx-power-off' id="dark"></i>
+          <span>Dark Mood</span>
         </div>
           <div className="profile-details">
-            <img src="" alt="profile" />
+            <img src="https://media.istockphoto.com/vectors/abstract-woman-face-with-wavy-hair-black-and-white-hand-drawn-line-vector-id1257298321?k=20&m=1257298321&s=612x612&w=0&h=S8TJlzUbA2X2PzCXtBQU4YeVrogJDepiNrD3BqJkKCM=" alt="profile" />
             <div className="name-job">
               <div className="name">shaden Ghasri</div>
               <div className="job">Web Developer</div>
