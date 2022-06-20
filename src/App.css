@@ -75,3 +75,10 @@ body{
   align-items: center;
   text-decoration: none;
 }
+
+.sidebar ul li a i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
