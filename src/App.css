@@ -30,3 +30,17 @@ body{
   width: 100%;
 
 }
+
+.logo-content .logo i{
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.logo-content .logo .logo-name{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sidebar #btn{
+  
+}
