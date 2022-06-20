@@ -42,7 +42,7 @@ function App() {
           </li>
           <li>
             <a href="#">
-              <i className="bx bx-chat"></i>
+              <i className="bx bx-book-open"></i>
               <span className="links-name">Guides</span>
             </a>
             <span className="tooltip">Guides</span>
@@ -102,9 +102,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="home_contetnt">
+      {/* <div className="home_contetnt">
         <div className="text">home</div>
-      </div>
+      </div> */}
     </>
   );
 }

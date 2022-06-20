@@ -29,19 +29,11 @@ body{
 }
 
 .sidebar .logo-content .logo{
-  /* display: flex;
-  align-items: center; */
   color: #fff;
-  margin-left: 10px;
+  margin-left: 20px;
   height: 50px;
   width: 100%;
-  /* opacity: 0;
-  pointer-events: none; */
 }
-
-/* .active .logo-content .logo{
-  opacity: 1;
-} */
 
 .logo-content .logo i{
   font-size: 28px;
@@ -92,7 +84,7 @@ body{
 
 .sidebar ul li .tooltip{
   position: absolute;
-  left: 140px;
+  left: 70px;
   top:0;
   transform: translateY(-50%);
   border-radius: 6px;
@@ -113,6 +105,10 @@ body{
   transition: all 0.5 s ease;
 }
 
+.active ul li .tooltip{
+  display: none;
+}
+
 .sidebar ul li a{
   color: #fff;
   display: flex;
@@ -120,6 +116,7 @@ body{
   text-decoration: none;
   transition: all 0.4s ease;
   border-radius: 12px;
+  white-space: nowrap;
 }
 
 .sidebar ul li a:hover{
@@ -133,6 +130,16 @@ body{
   border-radius: 12px;
   line-height: 50px;
   text-align: center;
+}
+
+.sidebar .links-name{
+  opacity: 0;
+  pointer-events: none ;
+}
+
+.active .links-name{
+  opacity: 1;
+  pointer-events: auto ;
 }
 
 .sidebar .profile-content{
@@ -155,19 +162,34 @@ align-items: center;
 }
 
 .profile-content .profile .mood i{
+  margin-left: 28px;
+  font-size: 20px;
+}
+.active .profile .mood i{
   margin-right: 5px;
   font-size: 20px;
-  }
+}
 
-.profile-content .profile .profile-details{
+.profile .mood span{
+  opacity: 0;
+  pointer-events: none;
+}
+.active .mood span{
+  opacity: 1;
+  transition: all 0.4s ease ;
+}
+
+
+.active .profile .profile-details{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 28px;
   height: 60px;
   width: 190px;
   border-radius: 10px;
   background-color: rgba(31, 29, 48, 0.7);
+  transition: all 0.4s ease ;
 }
 
 .profile .profile-details img{
@@ -175,11 +197,25 @@ align-items: center;
   width: 45px;
   object-fit: cover;
   border-radius: 25px;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+
+.active .profile-details img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
 .profile .profile-details .name-job {
+  opacity: 0;
+}
+
+.active .profile-details .name-job {
   margin-left: 15px;
   font-weight: 400;
+  opacity: 1;
 }
 
 .profile .profile-details .name {
@@ -189,7 +225,7 @@ align-items: center;
 .profile .profile-details .job {
   font-size: 12px;
 }
-
+/* 
 .home_contetnt{
   position: absolute;
   height: 100%;
@@ -200,4 +236,4 @@ align-items: center;
 .home_contetnt .text{
   font-size: 25px;
   margin: 10px;
-}
+} */
