@@ -5,6 +5,7 @@ import { useState } from "react";
 function App() {
   
   const [action,setAction] = useState(true);
+  const [mood,setMood] = useState(true)
 
   const handleAction = ()=>{
     if (action === true){
@@ -17,12 +18,11 @@ function App() {
   const handleMood = ()=>{
 
     document.body.classList.toggle("light");
-    // const text = document.querySelector("text-mode") 
-    // if(text.innerHTML === "Dark Mode"){
-    //   text.innerHTML === "Light Mode"
-    // }else{
-    //   text.innerHTML === "Dark Mode"
-    // }
+    if(mood === true){
+      setMood(false)
+    }else{
+      setMood(true)
+    }
   }
 
 
@@ -99,7 +99,9 @@ function App() {
           <div className="profile">
             <div className="mood">
               <i className="bx bx-power-off" id="dark" onClick={handleMood}></i>
-              <span className="text-mode">Dark Mode</span>
+              <span className="text-mode">{
+                mood ? "Dark Mood" : "Light Mood"
+              }</span>
             </div>
             <div className="profile-details">
               <img
