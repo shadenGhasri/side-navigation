@@ -1,7 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+
 function App() {
+
+  const sideBar = document.querySelector(".sidebar")
+  
+  const handleBtn = ()=>{
+    sideBar.classList.toggle("active")
+  }
+
   return (
     <>
       <div className="sidebar">
@@ -10,7 +18,7 @@ function App() {
           <i class="bx bx-spa"></i>
           <div className="logo-name">hamresaan</div>
         </div>
-        <i class='bx bx-chevron-right' id="btn"></i>
+        <i class='bx bx-chevron-right' id="btn" onClick={handleBtn}></i>
       </div>
       <ul className="nav-list">
         <li>
