@@ -17,6 +17,12 @@ function App() {
   const handleMood = ()=>{
 
     document.body.classList.toggle("light");
+    // const text = document.querySelector("text-mode") 
+    // if(text.innerHTML === "Dark Mode"){
+    //   text.innerHTML === "Light Mode"
+    // }else{
+    //   text.innerHTML === "Dark Mode"
+    // }
   }
 
 
@@ -93,7 +99,7 @@ function App() {
           <div className="profile">
             <div className="mood">
               <i className="bx bx-power-off" id="dark" onClick={handleMood}></i>
-              <span>Dark Mood</span>
+              <span className="text-mode">Dark Mode</span>
             </div>
             <div className="profile-details">
               <img

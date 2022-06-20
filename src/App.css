@@ -51,6 +51,7 @@ body{
 .logo-content .logo i{
   font-size: 28px;
   margin-right: 5px;
+  color:var(--primary-color);
 }
 
 .logo-content .logo .logo-name{
@@ -110,6 +111,7 @@ body{
   transition: 0s;
   opacity: 0;
   pointer-events: none;
+  color: var(--secondary-color);
 }
 
 .sidebar ul li:hover .tooltip{
