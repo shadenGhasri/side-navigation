@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+  }
+  
+  :root {
+    --primary-color: #fff;
+    --secondary-color: #11101d;
+    --Third-color :rgba(31, 29, 48, 0.7);
+  }
+  
+  .light {
+    --primary-color: #11101d;
+    --secondary-color: #fff;
+    --Third-color: rgb(245, 238, 238);
+  }
+  
+  body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(154, 156, 157);
+  }
+  
+  .sidebar{
+    height: 100%;
+    width: 78px;
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color:var(--secondary-color);
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+  }
+  
+  .active{
+    width: 240px;
+  }
+  
+  .sidebar .logo-content .logo{
+    color:var(--primary-color);
+    margin-left: 20px;
+    margin-top: 10px;
+    /* height: 50px;
+    width: 100%; */
+  }
+  
+  .logo-content .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+    color:var(--primary-color);
+  }
+  
+  .logo-content .logo .logo-name{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .sidebar #btn{
+    color: var(--primary-color);
+    font-size: 25px;
+  }
+  
+  .sidebar .box-btn{
+    position: absolute;
+    left: 86%;
+    top:40px;
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--Third-color);
+    border-radius: 10px;
+  }
+  
+  .active .box-btn{
+    position: absolute;
+    top:40px;
+    left: 94%;
+  }
+  
+  .sidebar ul{
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+    
+  }
+  
+  .sidebar ul li .tooltip{
+    position: absolute;
+    left: 70px;
+    top:0;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 122px;
+    background-color: var(--primary-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    color: var(--secondary-color);
+  }
+  
+  .sidebar ul li:hover .tooltip{
+    top: 50%;
+    opacity: 1;
+    transition: all 0.5 s ease;
+  }
+  
+  .active ul li .tooltip{
+    display: none;
+  }
+  
+  .sidebar ul li a{
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  
+  .sidebar ul li a:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+  
+  .sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .sidebar .links-name{
+    opacity: 0;
+    pointer-events: none ;
+    transition: all 0.5s ease;
+  }
+  
+  .active .links-name{
+    opacity: 1;
+    pointer-events: auto ;
+  }
+  
+  .sidebar .profile-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--primary-color);
+    width: 100%;
+  }
+  
+  .sidebar .profile-content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 160px;
+  }
+  
+  .profile-content .profile .mood{
+  display: flex;
+  align-items: center;
+  }
+  
+  .profile-content .profile .mood i{
+    margin-left: 28px;
+    font-size: 20px;
+  }
+  .active .profile .mood i{
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  .profile .mood span{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .active .mood span{
+    opacity: 1;
+    transition: all 0.4s ease ;
+  }
+  
+  
+  .active .profile .profile-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    height: 60px;
+    width: 190px;
+    border-radius: 10px;
+    /* background-color: rgba(31, 29, 48, 0.7); */
+    background-color: var(--Third-color);
+    transition: all 0.4s ease ;
+  }
+  
+  .profile .profile-details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 14px;
+  }
+  
+  .active .profile-details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .profile .profile-details .name-job {
+    opacity: 0;
+  }
+  
+  .active .profile-details .name-job {
+    margin-left: 15px;
+    font-weight: 400;
+    opacity: 1;
+  }
+  
+  .profile .profile-details .name {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .profile .profile-details .job {
+    font-size: 12px;
+  }
